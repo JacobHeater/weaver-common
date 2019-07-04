@@ -1,0 +1,34 @@
+{
+  "name": "weaver-common",
+  "version": "1.0.0",
+  "description": "Common code for the Weaver project",
+  "main": "bin/index.js",
+  "scripts": {
+    "test": "npx jest"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/JacobHeater/weaver-common.git"
+  },
+  "keywords": [
+    "Weaver",
+    "common"
+  ],
+  "author": "Jacob Heater <jacobheater@gmail.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/JacobHeater/weaver-common/issues"
+  },
+  "homepage": "https://github.com/JacobHeater/weaver-common#readme",
+  "devDependencies": {
+    "@types/jest": "^24.0.15",
+    "jest": "^24.8.0",
+    "ts-jest": "^24.0.2",
+    "typescript": "^3.5.2"
+  },
+  "dependencies": {
+    "@types/uuid": "^3.4.5",
+    "tslib": "^1.10.0",
+    "uuid": "^3.3.2"
+  }
+}
