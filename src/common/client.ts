@@ -13,7 +13,6 @@ export class Client implements IValidate {
 
   public id: string = '';
   public computerName: string = '';
-  public emailAddress: string = '';
   public userPrincipalName: string = '';
 
   /**
