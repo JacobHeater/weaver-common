@@ -6,6 +6,10 @@ const EXECUTE_SCRIPT = 'execute-script';
 const POST_EXECUTE_SCRIPT = 'post-execute-script';
 const CONNECT = 'connect';
 const DISCONNECT = 'disconnect';
+const WANT_CLIENTS = 'want-clients';
+const POST_WANT_CLIENTS = 'post-want-clients';
+const NEW_CLIENT_REGISTERED = 'new-client-registered';
+const CLIENT_DISCONNECTED = 'client-disconnected';
 
 export {
   LOGOUT,
@@ -15,5 +19,9 @@ export {
   EXECUTE_SCRIPT ,
   POST_EXECUTE_SCRIPT,
   CONNECT,
-  DISCONNECT
+  DISCONNECT,
+  WANT_CLIENTS,
+  POST_WANT_CLIENTS,
+  NEW_CLIENT_REGISTERED,
+  CLIENT_DISCONNECTED
 };
