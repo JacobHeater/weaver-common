@@ -5,7 +5,7 @@ export class RegistrationRequest extends BaseSocketRequest<Client> {
   /**
    * Validates that the data for this request is valid.
    */
-  public isValid(): boolean {
+  isValid(): boolean {
     return !!this.data && this.data.isValid();
   }
 };

@@ -17,9 +17,9 @@ export abstract class BaseSocketRequest<T> implements IValidate {
     this.data = data;
   }
   
-  public data: T | undefined;
-  public clientId: string = '';
-  public abstract isValid(): boolean;
+  data: T | undefined;
+  clientId: string = '';
+  abstract isValid(): boolean;
   
   /**
    * Validates that the given identifier is valid.

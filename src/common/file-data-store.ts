@@ -20,11 +20,11 @@ export abstract class FileDataStore extends InMemoryDataStore {
 
   private _path: string;
 
-  public save(): void {
+  save(): void {
     fs.writeFileSync(this._path, this.keyValueStoreToJson());
   }
 
-  public async saveAsync(): Promise<NodeJS.ErrnoException | null | undefined> {
+  async saveAsync(): Promise<NodeJS.ErrnoException | null | undefined> {
     return new Promise<NodeJS.ErrnoException | null | undefined>((resolve, reject) => {
       fs.writeFile(this._path, this.keyValueStoreToJson(), err => {
         if (err) {
@@ -36,7 +36,7 @@ export abstract class FileDataStore extends InMemoryDataStore {
     });
   }
 
-  public updatePath(path: string, createIfNotExists: boolean): void {
+  updatePath(path: string, createIfNotExists: boolean): void {
     this.validatePath(path, createIfNotExists);
 
     this._path = path;

@@ -11,7 +11,7 @@ export abstract class InMemoryDataStore implements IDataStore {
    * @param key The key of the entry.
    * @param defaultValue The default value, should the entry not exist.
    */
-  public get<T>(key: string, defaultValue?: T | undefined): T | undefined {
+  get<T>(key: string, defaultValue?: T | undefined): T | undefined {
     return this._keyValueStore[key] || defaultValue;
   }  
   
@@ -21,7 +21,7 @@ export abstract class InMemoryDataStore implements IDataStore {
    * @param key The key of the entry.
    * @param value The value of the entry.
    */
-  public set<T>(key: string, value: T): void {
+  set<T>(key: string, value: T): void {
     this._keyValueStore[key] = value;
   }
 };

@@ -11,7 +11,7 @@ export abstract class BaseSocketResponse<T> implements IStatusResult {
     this.data = data;
   }
 
-  public status: StatusCodes = StatusCodes.Unknown;
-  public failureReasons: string[] = [];
-  public data: T | undefined;
+  status: StatusCodes = StatusCodes.Unknown;
+  failureReasons: string[] = [];
+  data: T | undefined;
 }

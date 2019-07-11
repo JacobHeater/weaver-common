@@ -11,15 +11,15 @@ export class Client implements IValidate {
     this.id = id || '';
   }
 
-  public id: string = '';
-  public computerName: string = '';
-  public userPrincipalName: string = '';
+  id: string = '';
+  computerName: string = '';
+  userPrincipalName: string = '';
 
   /**
    * Returns a boolean indicating if the
    * client is valid.
    */
-  public isValid(): boolean {
+  isValid(): boolean {
     return !!(this.id || '').trim() && !!(this.computerName || '').trim();
   }
 }
